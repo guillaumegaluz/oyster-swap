@@ -55,6 +55,7 @@ export function WalletProvider({ children = null as any }) {
       setConnected(false);
     };
   }, [wallet]);
+
   return (
     <WalletContext.Provider
       value={{
@@ -74,6 +75,7 @@ export function WalletProvider({ children = null as any }) {
 
 export function useWallet() {
   const context = useContext(WalletContext);
+  
   return {
     connected: context.connected,
     wallet: context.wallet,

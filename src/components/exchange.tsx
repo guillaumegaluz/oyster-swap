@@ -7,9 +7,11 @@ import { useWallet } from "../utils/wallet";
 import { AccountInfo } from "./accountInfo";
 import { Settings } from "./settings";
 import { SettingOutlined } from "@ant-design/icons";
+import { Hint } from "./tutorial/hints/hint";
 
 export const ExchangeView = (props: {}) => {
   const { connected, wallet } = useWallet();
+
   const tabStyle: React.CSSProperties = { width: 120 };
   const tabList = [
     {
@@ -96,7 +98,12 @@ export const ExchangeView = (props: {}) => {
   return (
     <>
       {TopBar}
-      <Card
+
+      {/* YOU MADE IT !!! */}
+      <Hint step={1} />
+
+      {/* Uncomment the code below */}
+      {/* <Card
         className="exchange-card"
         headStyle={{ padding: 0 }}
         tabList={tabList}
@@ -109,7 +116,7 @@ export const ExchangeView = (props: {}) => {
         }}
       >
         {tabList.find((t) => t.key === activeTab)?.render()}
-      </Card>
+      </Card> */}
     </>
   );
 };
