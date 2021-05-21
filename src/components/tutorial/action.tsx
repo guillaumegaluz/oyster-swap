@@ -1,5 +1,5 @@
 import React from "react";
-import { Alert, Collapse } from "antd";
+import { Collapse } from "antd";
 import { CaretRightOutlined } from "@ant-design/icons";
 
 const { Panel } = Collapse;

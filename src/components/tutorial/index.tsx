@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { Intro, AMMs, Architecture, Exchange } from "./steps";
 import { Button, Space, Row, Col } from "antd";
 import { ArrowLeftOutlined, ArrowRightOutlined } from "@ant-design/icons";
 import Step from "./step";
