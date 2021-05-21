@@ -7,7 +7,7 @@ import { useWallet } from "../utils/wallet";
 import { AccountInfo } from "./accountInfo";
 import { Settings } from "./settings";
 import { SettingOutlined } from "@ant-design/icons";
-import { Hint } from "./tutorial/hints/hint";
+import { Hint } from "./tutorial/hint";
 
 export const ExchangeView = (props: {}) => {
   const { connected, wallet } = useWallet();
@@ -18,14 +18,16 @@ export const ExchangeView = (props: {}) => {
       key: "trade",
       tab: <div style={tabStyle}>Trade</div>,
       render: () => {
-        return <TradeEntry />;
+        return <Hint step="trade" />
+        // return <TradeEntry />;
       },
     },
     {
       key: "pool",
       tab: <div style={tabStyle}>Pool</div>,
       render: () => {
-        return <AddToLiquidity />;
+        return <Hint step="pool" />
+        // return <AddToLiquidity />;
       },
     },
   ];
@@ -99,10 +101,10 @@ export const ExchangeView = (props: {}) => {
     <>
       {TopBar}
 
-      {/* YOU MADE IT !!! */}
-      <Hint step={1} />
+      {/* COMMENT ME */}
+      <Hint step="exchange" />
 
-      {/* Uncomment the code below */}
+      {/* AND COMMENT ME BELOW */}
       {/* <Card
         className="exchange-card"
         headStyle={{ padding: 0 }}

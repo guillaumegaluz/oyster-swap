@@ -442,6 +442,7 @@ export const usePoolForBasket = (mints: (string | undefined)[]) => {
   const { pools } = useCachedPool();
   const [pool, setPool] = useState<PoolInfo>();
   const sortedMints = [...mints].sort();
+
   useEffect(() => {
     (async () => {
       // reset pool during query
@@ -715,6 +716,7 @@ export async function calculateDependentAmount(
     connection,
     pool.pubkeys.holdingAccounts[1]
   );
+
   if (!poolMint.mintAuthority) {
     throw new Error("Mint doesnt have authority");
   }
@@ -725,6 +727,13 @@ export async function calculateDependentAmount(
 
   const mintA = await cache.getMint(connection, accountA.info.mint);
   const mintB = await cache.getMint(connection, accountB.info.mint);
+
+  console.log(`mintA`, mintA)
+  console.log(`mintB`, mintB)
+
+
+  console.log(`accountA`, accountA)
+  console.log(`accountB`, accountB)
 
   if (!mintA || !mintB) {
     return;
@@ -747,7 +756,12 @@ export async function calculateDependentAmount(
     : (accountA.info.amount.toNumber() / accountB.info.amount.toNumber()) *
       adjAmount;
 
-  return dependentTokenAmount / depPrecision;
+  console.log(`dependentTokenAmount`, dependentTokenAmount)
+  console.log(`depPrecision`, depPrecision)
+
+  return NaN;
+
+  // return dependentTokenAmount / depPrecision;
 }
 
 // TODO: add ui to customize curve type

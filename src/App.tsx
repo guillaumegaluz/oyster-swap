@@ -4,7 +4,7 @@ import "./tutorial.less";
 import { Routes } from "./routes";
 import { Row, Col } from "antd";
 import { Tutorial } from "./components/tutorial";
-import { Hint } from "./components/tutorial/hints/hint";
+import { Hint } from "./components/tutorial/hint";
 
 function App() {
   return (
@@ -14,17 +14,17 @@ function App() {
       </Col>
 
       {/* COMMENT ME */}
-      {/* <Hint step={0} /> */}
+      <Hint step="app" />
 
       {/* AND UNCOMMENT ME */}
-      <Col span="16">
+      {/* <Col span="16">
         <div className="Banner">
           <div className="Banner-description">
             Swap is unaudited software. Use at your own risk.
           </div>
         </div>
         <Routes />
-      </Col>
+      </Col> */}
     </Row>
   );
 }

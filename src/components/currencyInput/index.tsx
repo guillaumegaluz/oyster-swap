@@ -30,6 +30,7 @@ export const CurrencyInput = (props: {
 
   const { env } = useConnectionConfig();
 
+  // const tokens = [PopularTokens[env][0]] as KnownToken[];
   const tokens = PopularTokens[env] as KnownToken[];
 
   const renderPopularTokens = tokens.map((item) => {

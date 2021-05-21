@@ -1,6 +1,6 @@
 .tutorial {
   background-color: white;
-  padding: 20px 15px;
+  padding: 20px;
   height: 100vh;
   border: solid #2abdd2 5px;
   text-align: left;
@@ -11,18 +11,66 @@
   }
 
   code {
-    color: #ff0000;
+    color: #ff7272;
     font-size: 13px;
     padding: 2px 2px;
     background-color: #fff5f5;
   }
 
-  .ant-collapse-header {
-    color: black !important;
+  .ant-collapse {
+    border: none;
+  }
+
+  .ant-collapse > .ant-collapse-item {
+    border-bottom: none !important;
+  }
+
+  .ant-collapse-content {
+    border-top: none;
+  }
+
+  .ant-collapse.action {
+    .ant-collapse-header {
+      background-color: #fffbe6;
+      border: 1px solid #ffe58f;
+      color: black !important;
+      font-weight: bold;
+    }
+
+    .ant-collapse-content-box {
+      background-color: #fffbe6;
+    }
+  }
+
+  .ant-collapse.tip {
+    .ant-collapse-header {
+      background-color: #e6f7ff;
+      border: 1px solid #91d5ff;
+      color: black !important;
+    }
+
+    .ant-collapse-content-box {
+      background-color: #e6f7ff;
+    }
   }
 
   .ant-collapse-content-box {
     color: black !important;
     background-color: white;
+  }
+
+  blockquote {
+    color: transparent !important;
+  }
+
+  // .action {
+  //   background-color: white !important;
+  //   border: 1px solid #1b474d;
+  //   color: #1b474d !important;
+  //   margin: 10px 0 20px 0;
+  // }
+
+  .ant-alert-message {
+    color: #1b474d !important;
   }
 }
