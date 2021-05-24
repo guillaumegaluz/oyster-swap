@@ -14,6 +14,7 @@ import { PoolIcon, TokenIcon } from "../tokenIcon";
 import PopularTokens from "../../utils/token-list.json";
 import { PublicKey } from "@solana/web3.js";
 import { PoolInfo, TokenAccount } from "../../models";
+import { Hint } from "../tutorial/hint";
 
 const { Option } = Select;
 
@@ -30,7 +31,6 @@ export const CurrencyInput = (props: {
 
   const { env } = useConnectionConfig();
 
-  // const tokens = [PopularTokens[env][0]] as KnownToken[];
   const tokens = PopularTokens[env] as KnownToken[];
 
   const renderPopularTokens = tokens.map((item) => {
@@ -92,7 +92,7 @@ export const CurrencyInput = (props: {
 
         const sorted = account.pool.pubkeys.holdingMints
           .map((a: PublicKey) => a.toBase58())
-          .sort();
+          .sort()
         icon = <PoolIcon mintA={sorted[0]} mintB={sorted[1]} />;
       } else {
         name = getTokenName(env, mint);
@@ -126,6 +126,8 @@ export const CurrencyInput = (props: {
 
     return 0;
   };
+
+  return <Hint step="input" />
 
   return (
     <Card

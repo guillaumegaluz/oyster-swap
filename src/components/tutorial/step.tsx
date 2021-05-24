@@ -8,7 +8,6 @@ const Step = ({ markdownPath }: { markdownPath: string }) => {
   
   // This loads markdown asynchronously from a local file
   useEffect(() => {
-    console.log(`markdownPath`, markdownPath);
     const markdownFile = require(`./markdown/${markdownPath}.md`);
     
     fetch(markdownFile)

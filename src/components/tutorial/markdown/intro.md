@@ -2,9 +2,9 @@
 
 ## Getting started
 
-To help you explore and understand the codebase we've made this tutorial as interactive as possible.
+To help you explore and understand the codebase we've made this tutorial as engaging as possible.
 
-We commented some parts of the code and right now the app is not functional. We'll point you to the places where we've made those changes and we'll help make the necessary fixes to make the app work again.
+We commented/altered some critical parts of the code and right now the app is not functional. We'll point you to the places where we've made those changes and we'll help make the necessary changes to make the app work again.
 
 Throughout the tutorial you will see alerts like this one below. It will tell you what to do and - if you are stuck and want the answer - you can always expand it to see the answer. Try it out:
 
@@ -21,7 +21,11 @@ Sometimes you will just find a tip or resource. They will look this:
   }
 />
 
-You'll need some intermediate understanding of React (including context and hooks) to be able follow. 
+## Who is this for?
+
+This tutorial is for developers with a solid understand of Javascript/React who are curious about blockchain/DeFi and want to see how an AMM (_a la Uniswap_) works under the hood. If you don't know what React's functional components, hooks or context are you should learn those before going through this! Typescript experience will be useful but is not required.
+
+## Content
 
 Here's what we will cover:
 

@@ -3,11 +3,23 @@ import { Button, Space, Row, Col } from "antd";
 import { ArrowLeftOutlined, ArrowRightOutlined } from "@ant-design/icons";
 import Step from "./step";
 
+const STEPS = [
+  "intro",
+  "amm",
+  "architecture",
+  "wallet",
+  "pool",
+  "end",
+];
+
 export const Tutorial = () => {
   const [step, setStep] = useState(0);
 
-  const nextStep = () => setStep(step + 1);
-  const prevStep = () => setStep(step === 0 ? 0 : step - 1);
+  const isFirstStep = step == 0;
+  const isLastStep = step === STEPS.length -1;
+
+  const prevStep = () => setStep(isFirstStep ? 0 : step - 1);
+  const nextStep = () => setStep(isLastStep ? step : step + 1);
 
   // on page load, get the last step from local storage
   useEffect(() => {
@@ -26,14 +38,11 @@ export const Tutorial = () => {
 
   return (
     <div className="tutorial">
-      {step === 0 && <Step markdownPath={"intro"} />}
-      {step === 1 && <Step markdownPath={"amm"} />}
-      {step === 2 && <Step markdownPath={"architecture"} />}
-      {step === 3 && <Step markdownPath={"pool"} />}
+      <Step markdownPath={STEPS[step]} />
 
       <Row gutter={16} style={{ marginTop: "40px" }}>
-        {step !== 0 && <Col span={12}><Button type="primary" block icon={<ArrowLeftOutlined />} onClick={prevStep}>Prev</Button></Col>}
-        <Col span={step === 0 ? 24 : 12}><Button type="primary" block onClick={nextStep}><Space>Next<ArrowRightOutlined /></Space></Button></Col>
+        {!isFirstStep && <Col span={isLastStep ? 24 : 12}><Button type="primary" block icon={<ArrowLeftOutlined />} onClick={prevStep}>Prev</Button></Col>}
+        {!isLastStep && <Col span={isFirstStep ? 24 : 12}><Button type="primary" block onClick={nextStep}><Space>Next<ArrowRightOutlined /></Space></Button></Col>}
       </Row>
 
     </div>

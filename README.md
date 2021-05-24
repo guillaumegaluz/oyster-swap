@@ -12,4 +12,6 @@ yarn
 yarn start
 ```
 
-Then follow the instructions on the screen!
+The first asset compilation takes a long time. Don't panic or try and debug it: just get a coffee and when you'll be back the UI will appear.
+
+Once the UI loads, follow the instructions on the screen!

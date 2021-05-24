@@ -731,7 +731,6 @@ export async function calculateDependentAmount(
   console.log(`mintA`, mintA)
   console.log(`mintB`, mintB)
 
-
   console.log(`accountA`, accountA)
   console.log(`accountB`, accountB)
 
@@ -759,9 +758,7 @@ export async function calculateDependentAmount(
   console.log(`dependentTokenAmount`, dependentTokenAmount)
   console.log(`depPrecision`, depPrecision)
 
-  return NaN;
-
-  // return dependentTokenAmount / depPrecision;
+  return dependentTokenAmount / depPrecision;
 }
 
 // TODO: add ui to customize curve type

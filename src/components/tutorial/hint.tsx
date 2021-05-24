@@ -54,6 +54,13 @@ export const Hint = ({ step }: { step: number | string }) => {
           <span>Find the right code that reveals the UI to do that</span>
         </div>
       );
+    case "input":
+      return (
+        <div style={style}>
+          <Icon />
+          <span>Currency input</span>
+        </div>
+      );
     default:
       return <div>oops</div>
       break;
