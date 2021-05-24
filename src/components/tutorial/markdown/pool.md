@@ -1,4 +1,4 @@
-# Pools
+# 🍯 Pools
 
 Now that we have SOL tokens in our wallet, what can we do with them? The app's UI wouldn't be more simple: there are two tabs: Trade and Pool. We will start by looking at the second one. But first, a bit of theory...
 

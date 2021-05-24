@@ -1,4 +1,4 @@
-# Connecting a wallet
+# 💸 Connecting a wallet
 
 ## Users are dead! Long live wallets!
 

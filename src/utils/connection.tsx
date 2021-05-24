@@ -162,7 +162,11 @@ export const sendTransaction = async (
   if (signers.length > 0) {
     transaction.partialSign(...signers);
   }
-  transaction = await wallet.signTransaction(transaction);
+  
+  // ======================================
+  // YOU NEED TO SIGN THE TRANSACTION!
+  // ======================================
+
   const rawTransaction = transaction.serialize();
   let options = {
     skipPreflight: true,

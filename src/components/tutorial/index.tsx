@@ -9,6 +9,7 @@ const STEPS = [
   "architecture",
   "wallet",
   "pool",
+  "trade",
   "end",
 ];
 

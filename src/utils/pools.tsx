@@ -758,7 +758,10 @@ export async function calculateDependentAmount(
   console.log(`dependentTokenAmount`, dependentTokenAmount)
   console.log(`depPrecision`, depPrecision)
 
-  return dependentTokenAmount / depPrecision;
+  // =============================================================
+  // CHANGE THE RETURN STATEMENT USING THE TWO VALUES LOGGED ABOVE
+  // =============================================================
+  return NaN;
 }
 
 // TODO: add ui to customize curve type

@@ -127,6 +127,7 @@ export const CurrencyInput = (props: {
     return 0;
   };
 
+  // COMMENT THE LINE BELOW
   return <Hint step="input" />
 
   return (

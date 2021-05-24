@@ -101,10 +101,10 @@ export const ExchangeView = (props: {}) => {
     <>
       {TopBar}
 
-      {/* COMMENT ME */}
+      {/* COMMENT THE LINE BELOW */}
       <Hint step="exchange" />
 
-      {/* AND COMMENT ME BELOW */}
+      {/* AND UNCOMMENT ME BELOW */}
       {/* <Card
         className="exchange-card"
         headStyle={{ padding: 0 }}

@@ -1,10 +1,14 @@
-# Solana Swap Tutorial
+# 🔀 Solana Swap Tutorial
 
-## Getting started
+You've probably heard of [Uniswap](https://uniswap.org/)? Uniswap is to Ethereum what this Swap app you're holding in your hands is to Solana. We're going to explore how the frontend of such an app is built and by doing so we'll learn a few things about automated market makets.
 
-To help you explore and understand the codebase we've made this tutorial as engaging as possible.
+## Who is this for?
 
-We commented/altered some critical parts of the code and right now the app is not functional. We'll point you to the places where we've made those changes and we'll help make the necessary changes to make the app work again.
+This tutorial is for developers with a solid understand of Javascript/React who are curious about blockchain/DeFi and want to see how an AMM (_a la Uniswap_) works under the hood. If you don't know what React's functional components, hooks or context are you should learn those before going through this! Typescript experience will be useful but is not required.
+
+## How it will work
+
+To help you explore and understand the codebase we've made this tutorial as engaging as possible. We commented/altered some critical parts of the code and right now the app is not functional. We'll point you to the places where we've made those changes and we'll help make the necessary changes to make the app work again.
 
 Throughout the tutorial you will see alerts like this one below. It will tell you what to do and - if you are stuck and want the answer - you can always expand it to see the answer. Try it out:
 
@@ -21,10 +25,6 @@ Sometimes you will just find a tip or resource. They will look this:
   }
 />
 
-## Who is this for?
-
-This tutorial is for developers with a solid understand of Javascript/React who are curious about blockchain/DeFi and want to see how an AMM (_a la Uniswap_) works under the hood. If you don't know what React's functional components, hooks or context are you should learn those before going through this! Typescript experience will be useful but is not required.
-
 ## Content
 
 Here's what we will cover:
@@ -33,6 +33,7 @@ Here's what we will cover:
 2. **A brief overview of AMMs**
 3. **How the app is architectured**
 4. **Pools and Liquidity Providers**
-3. **Swaps**
+5. **Swaps**
+5. **Recap**
 
-Before we dive into the code let's take a few minutes to talk about exchanges...
+But before we dive in the code let's take a few minutes to talk about exchanges...

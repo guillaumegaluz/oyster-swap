@@ -1,4 +1,4 @@
-# From exchanges to AMMs
+# 🛒 From exchanges to AMMs
 
 *4 min read*
 
