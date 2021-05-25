@@ -1,10 +1,10 @@
 # 🔀 Solana Swap Tutorial
 
-You've probably heard of [Uniswap](https://uniswap.org/)? Uniswap is to Ethereum what this Swap app you're holding in your hands is to Solana. We're going to explore how the frontend of such an app is built and by doing so we'll learn a few things about automated market makets.
+You've probably heard of [Uniswap](https://uniswap.org/)? Uniswap is to Ethereum what this Swap app you're holding in your hands is to Solana. We're going to explore how the frontend of such an app is built and by doing so we'll learn a few things about automated market makers (AMM).
 
 ## Who is this for?
 
-This tutorial is for developers with a solid understand of Javascript/React who are curious about blockchain/DeFi and want to see how an AMM (_a la Uniswap_) works under the hood. If you don't know what React's functional components, hooks or context are you should learn those before going through this! Typescript experience will be useful but is not required.
+This tutorial is for developers with a solid understanding of Javascript & React,   who are curious about blockchain/DeFi and want to see how an AMM (_a la Uniswap_) works under the hood. If you don't know what React's functional components, hooks or context are you should learn those before going through this! Typescript experience will be useful but is not required.
 
 ## How it will work
 
@@ -36,4 +36,4 @@ Here's what we will cover:
 5. **Swaps**
 5. **Recap**
 
-But before we dive in the code let's take a few minutes to talk about exchanges...
+Before we dive in the code let's take a few minutes to talk about exchanges...

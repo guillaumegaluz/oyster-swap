@@ -2,7 +2,7 @@
 
 ### Overview of the React app
 
-The application that we cloned contains the code that will run on the user's browser (the _client side_ code). The smart contract that it will interact with (once the user makes a request to swap funds of provide liquidity) lives on the blockchain. It has already been deployed and is ready to use. \
+The application that we cloned contains the code that will run on the user's browser (the _client side_ code). The smart contract that it will interact with (once the user makes a request to swap funds of provide liquidity) lives on the blockchain. It has already been deployed and is ready to use.
 
 Most of the app's code is written inside the `src` folder which has 3 subfolders:
 
@@ -36,17 +36,19 @@ Like any web page, everything starts with an HTML document. It's in `public/inde
   }
 />
 
-Starting from `src/App.tsx` follow the path of components rendering until you see a UI that shows the 3 main features of our app:
-- Connect a Wallet (far right of `<TopBar />`)
-- Trade (first tab of `<ExchangeView />`)
-- Pool (second tab of `<ExchangeView />`)
+Starting from `src/App.tsx` follow the path of components rendering until you see a UI that shows the 3 main features of our app:  
+
+- Connect a Wallet (far right of `<TopBar />`)  
+- Trade (first tab of `<ExchangeView />`)  
+- Pool (second tab of `<ExchangeView />`)  
 
 By doing this you will familiarize yourself with the app's rendering hierarchy: `<App />` which uses a React Router to render one route (`<ExchangeView>`) which contains the `<TopBar />` (where a user can connect a wallet) and a box with two tabs: one to "Trade" and one to "Pool". Each of these tabs rely on a `<CurrencyInput />`
 
-The first few lines of `<CurrencyInput />` show the three main components of the application's state we'll work with:
-- Accounts
-- Mints
-- Pools
+The first few lines of `<CurrencyInput />` show the three main components of the application's state we'll work with: 
+
+- Accounts  
+- Mints  
+- Pools  
 
 Each of those are made available to the application's components through the two main custom hooks `utils/accounts.tsx` and `utils/pools.tsx`.
 

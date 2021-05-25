@@ -58,7 +58,7 @@ export const Hint = ({ step }: { step: number | string }) => {
       return (
         <div style={style}>
           <Icon />
-          <span>Currency input</span>
+          <span>Check <code>{`<CurrencyInput />`}</code></span>
         </div>
       );
     default:

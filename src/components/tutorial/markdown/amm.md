@@ -26,7 +26,7 @@ That's what decentralized exchange (DEX) allow you to do using the blockchain: t
 
 If a CEX is _peer-to-exchange-to-peer_ and a DEX is _peer-to-peer_, you could think of an AMMs as _peer-to-contract_. There’s no need for counterparties in the traditional sense, as trades happen between users and contracts. The contract posseses all the reserves of funds necessary to provide peers to trade against. That's why AMMs are automatic market makers.
 
-Where do those tokens come from?
-How does a trade work in practice?
+Where do those tokens come from?  
+How does a trade work in practice?  
 
 We still have some questions unresolved. We'll explore them as we go along.
