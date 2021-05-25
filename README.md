@@ -6,7 +6,7 @@ Any content produced by Solana, or developer resources that Solana provides, are
 ## How to use
 
 ```
-git clone -b tutorial git@github.com:guillaumegaluz/oyster-swap.git
+git clone -b tutorial https://github.com/guillaumegaluz/oyster-swap.git
 cd oyster-swap
 yarn
 yarn start
